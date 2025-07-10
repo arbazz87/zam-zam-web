@@ -1,0 +1,525 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #e2e2e2;
+    }
+    .top-bar{
+        background-color: #eeecec;
+    }
+    .top-bar-img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .menu-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      top: 0;
+      overflow: hidden;
+      position: sticky;
+      background-color: #fff;
+      opacity: 3;
+    }
+
+    .menu-icons .text-center {
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s;
+      padding: 10px;
+      border-radius: 12px;
+      text-align: center;
+      cursor: pointer;
+      top: 0;
+      overflow: hidden;
+    }
+
+    .menu-icons .text-center i {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 4px;
+      transition: transform 0.6s ease;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+    }
+
+    .menu-icons .text-center:hover {
+      background-color: rgba(13, 202, 240, 0.1);
+      box-shadow: 0 6px 18px rgba(13, 202, 240, 0.5);
+      transform: scale(1.1);
+    }
+
+    .menu-icons .text-center:hover i {
+      transform: rotate(20deg);
+      color: #0dcaf0;
+    }
+
+    .hero {
+      background: url('background-image.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 60px 20px;
+      position: relative;
+      margin-top: -290px;
+    }
+
+    .hero-overlay {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-label i {
+      margin-right: 6px;
+      color: #0d6efd;
+    }
+
+    .form-control::placeholder {
+      font-weight: bold;
+      color: #aaa;
+    }
+
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+
+    .chat-window {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 300px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+
+    .chat-window input {
+      margin-top: 10px;
+      font-family: 'Nunito', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 20px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .container h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #2c2c2c;
+    }
+
+    .highlight {
+      color: #319cff;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 16px;
+      color: #999;
+      margin: 10px 0 30px;
+    }
+
+    .line {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .line span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ffc107;
+    }
+
+    .packages {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(25% - 20px);
+      background: #e3eaf2;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      background: rgb(230, 230, 230);
+      padding: 5px 10px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 6px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .tag {
+      background: transparent;
+      border: 1px solid white;
+      padding: 4px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+    .special-container {
+      max-width: 1250px;
+      margin: auto;
+      background: #ebebeb;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    }
+
+    .special-container h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #2c2c2c;
+    }
+
+    .highlight {
+      color: #319cff;
+    }
+
+    .line {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .line span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ffc107;
+    }
+
+    .offer-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .offer-card {
+      flex: 1 1 calc(25% - 20px);
+      background: #ebebeb;
+      border: 1px solid #d0cccc;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .offer-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .offer-description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .offer-highlight {
+      font-weight: 700;
+      color: #000;
+      font-size: 14px;
+    }
+
+    .offer-link {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #319cff;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .offer-link::before, .offer-link::after {
+      content: "<<";
+      margin: 0 5px;
+    }
+
+    .offer-link::after {
+      content: ">>";
+    }
+
+    @media (max-width: 1024px) {
+      .offer-card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .offer-card {
+        flex: 1 1 100%;
+      }
+    }
+     .container {
+      padding: 50px 20px;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section h1 span {
+      color: #3498db;
+    }
+
+    .section p {
+      font-size: 16px;
+      color: white;
+    }
+
+    .destinations {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .left-large {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .left-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .overlay-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      text-align: left;
+    }
+
+    .overlay-text h2 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .overlay-text p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    .right-side {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .destination-box {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .destination-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .destination-box .overlay-text h2 {
+      font-size: 20px;
+    }
+
+    .destination-box .overlay-text p {
+      font-size: 14px;
+    }
+    .section { 
+    margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #bdeeff, #a0e1ff);
+    }
+
+    .mobile-app-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 50px 20px;
+    }
+
+    .mobile-img {
+      max-width: 300px;
+    }
+
+    .mobile-img img {
+      width: 100%;
+    }
+
+    .mobile-content {
+      max-width: 600px;
+      color: #111;
+    }
+
+    .mobile-content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+
+    .mobile-content p {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .mobile-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .mobile-content ul li {
+      margin-left: 150px;
+      font-size: 16px;
+      position: relative;
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .mobile-content ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #2b9ecf;
+      font-weight: bold;
+    }
+
+    .google-play {
+      margin-top: 20px;
+    }
+
+    .google-play img {
+      height: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-app-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .mobile-content {
+        margin-top: 30px;
+      }
+    }
+    .footer-top {
+            background-color: #f5f6f5;
+            padding: 40px 0;
+        }
+
+        .footer-top h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background-color: #0d6efd;
+            width: 220px;
+            text-align: center;
+        }
+
+        .tip {
+            text-align: center;
+        }
+
+        .tip i {
+            font-size: 40px;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+
+        .tip h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tip p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
